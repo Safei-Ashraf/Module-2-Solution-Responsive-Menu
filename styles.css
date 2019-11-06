@@ -1,0 +1,102 @@
+/*General Reseting for the Page Styles*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/*Base Style*/
+h1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 2%;
+}
+.container{
+    border: 1px solid black;
+    margin: 15px;
+    padding: 15px;
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    margin-top: 1%;   
+    min-height: 80vh;
+    width: 95%;
+    margin-left:auto ;
+    margin-right: auto;
+}
+section{
+    float: left;
+    position: relative;
+    
+}
+.chicken,.beef,.sushi{
+    border: 1px solid black;
+    height: 45%;
+    margin-left: 2%;
+    padding-left: 2%;
+    padding-bottom: 2%;
+
+}
+.chicken-head{
+    background: black;
+}
+.chicken{
+    background-color:#900C3F;
+}
+.beef-head{
+    background: crimson;
+}
+.beef{
+  
+    background-color:#0E96DA;   
+}
+.sushi-head{
+    background: darkviolet;
+}
+.sushi{
+    background-color:#FFC300;
+}
+header{
+    border: blanchedalmond 2px solid;
+    width: 33%;
+    height: 17%;
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 3%;
+    position: relative;
+    left:67%;
+    color: cornsilk;
+    box-shadow: -1px 2px;
+}
+
+/*Desktop Styling for Large Screens*/
+@media (min-width: 992px) {
+     .col-lg-3{
+      float: left;
+    }
+    .col-lg-3 {
+      width: 31%;
+    }
+  }
+/*Tablet Styling for Medium Size Screens*/
+@media (min-width:768px ) and (max-width: 991px){
+    .col-md-5{
+        float: left;
+      }
+      .col-md-5 {
+        width: 48%;
+      }
+      .chicken,.beef,.sushi{
+          margin-top: 1%;
+      }
+}
+/*Mobile Styling for Small Size Screens*/
+@media (max-width:767px){
+   .col-sm-9
+      .col-sm-9 {
+        width: 95.99%;
+      }
+      .chicken,.beef,.sushi{
+        margin-top: 3%;
+    }
+}
